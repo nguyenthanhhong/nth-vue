@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "chart.js": "^2.9.3",
+    "clipboard": "^2.0.6",
     "core-js": "^3.6.5",
     "element-ui": "^2.13.2",
     "glyphicons": "^0.2.0",

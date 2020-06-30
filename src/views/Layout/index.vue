@@ -26,8 +26,8 @@
     line-height: 50px;
   }
   .el-footer {
-    background-color: #B3C0D1;
-    color: #333;
+    background-color: #1f2d3d;
+    color: #fff;
     text-align: center;
     line-height: 60px;
   }
