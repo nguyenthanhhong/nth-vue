@@ -160,7 +160,7 @@ export default [
 			},
 			{
 				Code: "colors",
-				Title: "colors",
+				Title: "colors picker",
 				Icon: "el-icon-menu",
 				Path: "/ui/colors"
 			},
