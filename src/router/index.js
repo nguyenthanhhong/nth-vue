@@ -18,6 +18,12 @@ Vue.use(VueRouter)
         meta: { title: 'Home', iHomecon: 'dashboard', affix: true }
       },
       {
+        path: 'profile',
+        component: () => import('@/views/Pages/profile.vue'),
+        name: 'profile',
+        meta: { title: 'Profile', iHomecon: 'dashboard', affix: true }
+      },
+      {
         path: "/layout",
         name: 'Layout',
         component: () => import('@/views/Pages/layout.vue')
