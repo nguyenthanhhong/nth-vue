@@ -8,7 +8,7 @@
           </div>
           <div class="user-profile">
             <div class="box-center">
-              <el-image style="width: 100px; height: 100px" :src="user.avatar" fit="fill"></el-image>
+              <img style="width: 100px; height: 120px" src="../../assets/avatar.jpg" fit="fill">
             </div>
             <div class="box-center">
               <div class="user-name text-center">{{ user.name }}</div>
@@ -97,14 +97,15 @@
               </div>
             </el-tab-pane>
             <el-tab-pane label="Timeline" name="timeline">
-                <el-timeline>
-                    <el-timeline-item v-for="(item,index) of timeline" :key="index" :timestamp="item.timestamp" placement="top">
-                        <el-card>
-                        <h4>{{ item.title }}</h4>
-                        <p>{{ item.content }}</p>
-                        </el-card>
-                    </el-timeline-item>
-                </el-timeline>
+              <el-timeline :reverse="reverse">
+                <el-timeline-item
+                  v-for="(item,index) in timeline"
+                  :key="index"
+                  :timestamp="item.timestamp"
+                  :color="item.color">
+                  {{item.title}}
+                </el-timeline-item>
+              </el-timeline>
             </el-tab-pane>
             <el-tab-pane label="Basic Details" name="account">
               <div class="link-black text-sm">
@@ -145,31 +146,41 @@ export default {
       user: {
         name: 'Nguyễn Thanh Hồng',
         email: 'nguyenthanhhong26@gmail.com',
-        avatar: 'https://www.pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/app-assets/images/portrait/small/avatar-s-16.jpg',
+        avatar: '@/assets/avatar.jpg',
         roles: 'Admin',
         school: 'Bachelor of computer science in Ho Chi Minh City University of Science'
       },
       activeTab: "activity",
       timeline: [
         {
-          timestamp: '2019/4/20',
-          title: 'Update Github template',
-          content: 'PanJiaChen committed 2019/4/20 20:46'
+          timestamp: '2020/02/14',
+          title: 'GMS Technology',
+          color: '#409EFF'
         },
         {
-          timestamp: '2019/4/21',
-          title: 'Update Github template',
-          content: 'PanJiaChen committed 2019/4/21 20:46'
+          timestamp: '2018/06/01',
+          title: 'CMC Global',
+          color: '#0bbd87'
         },
         {
-          timestamp: '2019/4/22',
-          title: 'Build Template',
-          content: 'PanJiaChen committed 2019/4/22 20:46'
+          timestamp: '2017/06/01',
+          title: 'System EXE VN Co., Ltd',
+          color: '#E6A23C'
         },
         {
-          timestamp: '2019/4/23',
-          title: 'Release New Version',
-          content: 'PanJiaChen committed 2019/4/23 20:46'
+          timestamp: '2016/06/01',
+          title: 'Dou networks',
+          color: '#4050FF'
+        },
+        {
+          timestamp: '2014/06/01',
+          title: 'Uniccs Vietnam Co., Ltd',
+          color: '#40FFF2'
+        },
+        {
+          timestamp: '2012/12/01',
+          title: 'LAC VIET Computing Corp',
+          color: '#FF4040'
         }
       ]
     }
