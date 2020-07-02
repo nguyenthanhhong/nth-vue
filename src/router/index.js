@@ -15,18 +15,19 @@ Vue.use(VueRouter)
         path: 'index',
         component: () => import('@/views/Home'),
         name: 'Home',
-        meta: { title: 'Home', iHomecon: 'dashboard', affix: true }
+        meta: { title: 'Home' }
       },
       {
         path: 'profile',
         component: () => import('@/views/Pages/profile.vue'),
         name: 'profile',
-        meta: { title: 'Profile', iHomecon: 'dashboard', affix: true }
+        meta: { title: 'Profile' }
       },
       {
         path: "/layout",
         name: 'Layout',
-        component: () => import('@/views/Pages/layout.vue')
+        component: () => import('@/views/Pages/layout.vue'),
+        meta: { title: 'Layout' }
       },
       {
         path: "/pages/400",

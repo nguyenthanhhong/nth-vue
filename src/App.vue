@@ -6,7 +6,12 @@
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  watch: {
+    '$route' (to, from) {
+      document.title = to.meta.title || 'Nth VueJs'
+    }
+  }
 }
 </script>
 <style>
