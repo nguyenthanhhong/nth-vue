@@ -257,6 +257,10 @@ Vue.use(VueRouter)
         path: "/apps/forum",
         name: 'About',
         component: () => import('@/views/About.vue')
+      },
+      {
+        path: '*',
+        redirect: '/pages/404',
       }
     ]
   },
