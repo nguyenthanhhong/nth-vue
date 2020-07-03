@@ -39,7 +39,7 @@
 <script>
 
 export default {
-  name: '400'
+  name: 'layout'
 }
 </script>
 

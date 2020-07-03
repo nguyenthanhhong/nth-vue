@@ -60,26 +60,6 @@ Vue.use(VueRouter)
         component: () => import('@/views/Pages/gallery.vue')
       },
       {
-        path: "/pages/login",
-        name: 'login',
-        component: () => import('@/views/Auth/login.vue')
-      },
-      {
-        path: "/pages/register",
-        name: 'register',
-        component: () => import('@/views/Auth/register.vue')
-      },
-      {
-        path: "/pages/profile",
-        name: 'profile',
-        component: () => import('@/views/Auth/profile.vue')
-      },
-      {
-        path: "/pages/forgotpassword",
-        name: 'ForgotPassword',
-        component: () => import('@/views/Auth/forgotpwd.vue')
-      },
-      {
         path: "/map/googlemap",
         name: 'googlemap',
         component: () => import('@/views/Map/googlemap.vue')
@@ -259,11 +239,27 @@ Vue.use(VueRouter)
         name: 'About',
         component: () => import('@/views/About.vue')
       },
-      {
-        path: '*',
-        redirect: '/pages/404',
-      }
     ]
+  },
+  {
+    path: "/pages/login",
+    name: 'login',
+    component: () => import('@/views/Auth/login.vue')
+  },
+  {
+    path: "/pages/register",
+    name: 'register',
+    component: () => import('@/views/Auth/register.vue')
+  },
+  {
+    path: "/pages/profile",
+    name: 'profile',
+    component: () => import('@/views/Auth/profile.vue')
+  },
+  {
+    path: "/pages/forgotpassword",
+    name: 'ForgotPassword',
+    component: () => import('@/views/Auth/forgotpwd.vue')
   },
   {
     path: '/redirect',
@@ -283,6 +279,11 @@ Vue.use(VueRouter)
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  },
+  //catching page not found
+  {
+    path: '/*',
+    redirect: '/pages/404',
   }
 ]
 

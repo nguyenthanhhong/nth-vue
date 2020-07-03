@@ -8,6 +8,6 @@
 <script>
 
 export default {
-  name: '400'
+  name: 'galery'
 }
 </script>

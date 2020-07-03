@@ -10,7 +10,7 @@
 <script>
 
 export default {
-  name: '400',
+  name: 'page400',
   methods: {
     goHome() {
       this.$router.push('/index');

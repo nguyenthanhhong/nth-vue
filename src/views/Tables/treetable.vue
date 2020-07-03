@@ -32,7 +32,7 @@
 <script>
 
 export default {
-  name: '400',
+  name: 'treetable',
   data() {
     return {
       tableData: [{
