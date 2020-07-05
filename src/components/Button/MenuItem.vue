@@ -8,7 +8,8 @@
     <template v-else>
         <el-submenu :index="item.Code">
             <template slot="title">
-                <i v-if="item.Icon" :class="item.Icon"/>{{ item.Title}}
+              <i v-if="item.Icon" :class="item.Icon"/>
+              <span slot="title">{{ item.Title}}</span>
             </template>
             <MenuItem v-for="menu of item.child" :key="menu.Code" :index="menu.Code" :item="menu"/>
         </el-submenu>

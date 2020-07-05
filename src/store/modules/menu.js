@@ -49,12 +49,6 @@ export default [
 				]
 			},
 			{
-				Code: "gallery",
-				Title: "gallery",
-				Icon: "el-icon-menu",
-				Path: "/pages/gallery"
-			},
-			{
 				Code: "login",
 				Title: "login",
 				Icon: "el-icon-menu",
@@ -65,12 +59,6 @@ export default [
 				Title: "register",
 				Icon: "el-icon-menu",
 				Path: "/pages/register"
-			},
-			{
-				Code: "profile",
-				Title: "profile",
-				Icon: "el-icon-menu",
-				Path: "/pages/profile"
 			},
 			{
 				Code: "forgotpassword",
@@ -105,12 +93,6 @@ export default [
 		Icon: "el-icon-s-order",
 		child: [
 			{
-				Code: "panel",
-				Title: "Panel",
-				Icon: "el-icon-menu",
-				Path: "/ui/panel"
-			},
-			{
 				Code: "buttons",
 				Title: "Buttons",
 				Icon: "el-icon-menu",
@@ -127,12 +109,6 @@ export default [
 				Title: "Icons",
 				Icon: "el-icon-menu",
 				Path: "/ui/icons"
-			},
-			{
-				Code: "list",
-				Title: "List",
-				Icon: "el-icon-menu",
-				Path: "/ui/list"
 			},
 			{
 				Code: "tooltip",
