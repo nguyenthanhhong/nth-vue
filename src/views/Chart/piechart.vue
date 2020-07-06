@@ -1,45 +1,84 @@
 <template>
-  <div id="PieChart">
-    <pie-chart :data="chartData" :options="chartOptions"></pie-chart>
+  <div>
+    <pie-chart
+      type="pie"
+      :width="500"
+      :height="300"
+      :labels="datacollection.labels"
+      :datasets="datacollection.datasets"
+      :options="options"
+    ></pie-chart>
+    <el-col :span="4"><el-button @click="RandomizeData">Randomize Data</el-button></el-col>
   </div>
 </template>
-
 <script>
-import PieChart from "@/components/Chart/PieChart.js";
-export default {
-  name: "PieChart",
-  components: {
-    PieChart
-  },
-  data() {
-    return {
-      chartOptions: {
-        hoverBorderWidth: 20
-      },
-      chartData: {
-        hoverBackgroundColor: "red",
-        hoverBorderWidth: 10,
-        labels: ["Green", "Red", "Blue"],
-        datasets: [
-          {
-            label: "Data One",
-            backgroundColor: ["#41B883", "#E46651", "#00D8FF"],
-            data: [1, 10, 5]
-          }
-        ]
-      }
-    };
-  }
-};
-</script>
+  import PieChart from "@/components/Chart/ChartJs"
+  import { randomInt } from '@/utils'
 
-<style>
-#PieChart {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  export default {
+    components: {
+      PieChart
+    },
+    data() {
+      return {
+        datacollection: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          datasets: [{
+            data: [
+              this.createRandom(),
+              this.createRandom(),
+              this.createRandom(),
+              this.createRandom(),
+              this.createRandom(),
+              this.createRandom(),
+              this.createRandom(),
+            ],
+            backgroundColor: COLORS,
+            label: 'Dataset 1'
+          }],
+			  },
+        options: {
+          responsive: true,
+					legend: {
+						position: 'top',
+					},
+					title: {
+						display: true,
+						text: 'Chart.js Pie Chart'
+					}
+        }
+      };
+    },
+    methods: {
+      createRandom() {
+        return randomInt(0, 50)
+      },
+      createArrayRandom() {
+        let data = []
+        for(let i=0; i < 7; i++){
+          data.push(this.createRandom())
+        }
+        return data
+      },
+      RandomizeData() {
+        let datasets = this.datacollection.datasets.map( (el) => ({
+          ...el,
+          data: this.createArrayRandom()
+        }))
+        
+        this.datacollection.datasets = datasets
+      }
+    }
+  };
+  const COLORS = [
+		'#4dc9f6',
+		'#f67019',
+		'#f53794',
+		'#537bc4',
+		'#acc236',
+		'#166a8f',
+		'#00a950',
+		'#58595b',
+		'#8549ba'
+	];
+</script>

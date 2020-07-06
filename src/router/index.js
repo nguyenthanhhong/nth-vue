@@ -252,11 +252,6 @@ Vue.use(VueRouter)
     component: () => import('@/views/Auth/register.vue')
   },
   {
-    path: "/pages/profile",
-    name: 'profile',
-    component: () => import('@/views/Auth/profile.vue')
-  },
-  {
     path: "/pages/forgotpassword",
     name: 'ForgotPassword',
     component: () => import('@/views/Auth/forgotpwd.vue')

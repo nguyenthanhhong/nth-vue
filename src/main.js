@@ -7,6 +7,7 @@ import i18n from './i18n'
 import 'element-ui/lib/theme-chalk/index.css'
 import './assets/styles/index.scss'
 import icons from 'glyphicons'
+import * as VueGoogleMaps from "vue2-google-maps";
 
 Vue.config.productionTip = false
 Vue.use(Element, {
@@ -14,6 +15,13 @@ Vue.use(Element, {
   i18n: (key, value) => i18n.t(key, value)
 })
 Vue.use(icons)
+
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: "YOUR_API_TOKEN",
+    libraries: "places"
+  }
+});
 
 new Vue({
   router,

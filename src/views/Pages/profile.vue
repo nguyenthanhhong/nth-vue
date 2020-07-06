@@ -39,7 +39,7 @@
                 </div>
                 <div class="link-black text-sm">
                   <i class="el-icon-present" />
-                  1988/06/02
+                  Jun 2nd, 1988
                 </div>
                 <div class="link-black text-sm">
                   <i class="el-icon-message" />

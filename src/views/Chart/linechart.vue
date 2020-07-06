@@ -1,51 +1,47 @@
 <template>
-  <chart :chart-data="datacollection"></chart>
+  <div>
+    <el-checkbox-group v-model="selectedYears">
+      <el-checkbox label="2018"></el-checkbox>
+      <el-checkbox label="2017"></el-checkbox>
+    </el-checkbox-group>
+    <line-chart
+      type="line"
+      :width="500"
+      :height="300"
+      :labels="['Jan', 'Feb', 'Mar', 'Apr', 'May']"
+      :datasets="displayedDatasets"
+    ></line-chart>
+  </div>
 </template>
 <script>
-  import Chart from "@/components/Chart/LineChart.js";
+  import LineChart from "@/components/Chart/ChartJs";
   export default {
     components: {
-      Chart
+      LineChart
     },
     data() {
       return {
-        datacollection: null
+        selectedYears: ["2018", "2017"],
+        datasets : {
+          "2018":{
+            label: '2018 Sales',
+            borderColor: 'rgba(50, 115, 220, 0.5)',
+            backgroundColor: 'rgba(50, 115, 220, 0.1)',
+            data: [300, 700, 450, 750, 450]
+          },
+          "2017":{
+            label: '2017 Sales',
+            borderColor: 'rgba(255, 56, 96, 0.5)',
+            backgroundColor: 'rgba(255, 56, 96, 0.1)',
+            data: [600, 550, 750, 250, 700]
+          }
+        }
       };
     },
-    mounted() {
-      this.fillData();
+    computed: {
+      displayedDatasets() {
+        return this.selectedYears.map(year => this.datasets[year]);
+      }
     },
-    methods: {
-      fillData() {
-        this.datacollection = {
-          labels: [
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"
-          ],
-          datasets: [
-            {
-              label: "GitHub Commits",
-              backgroundColor: "#f87979",
-              data: [70, 20, 12, 39, 100, 40, 95, 80, 80, 20, 12, 101]
-            },
-            {
-              label: "Monthly incomes",
-              backgroundColor: "#A5CC82",
-              data: [205, 408, 188, 190, 58, 200, 190, 400, 164, 254, 290, 201]
-            }
-          ]
-        };
-      },
-    }
   };
 </script>

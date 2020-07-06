@@ -28,3 +28,19 @@ export function removeClass(ele, cls) {
     ele.className = ele.className.replace(reg, ' ')
   }
 }
+/**
+ * Getting a random number between two values
+ * @param {number} min 
+ * @param {number} max 
+ */
+export function random(min, max) {
+  return Math.random() * (max - min) + min;
+}
+/**
+ * Getting a random integer between two values
+ * @param {number} min 
+ * @param {number} max 
+ */
+export function randomInt(min, max) {
+  return Math.round(Math.random() * (max - min) + min);
+}
