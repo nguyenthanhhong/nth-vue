@@ -222,7 +222,7 @@ Vue.use(VueRouter)
       {
         path: "/apps/calendar",
         name: 'About',
-        component: () => import('@/views/About.vue')
+        component: () => import('@/views/Apps/calendar.vue')
       },
       {
         path: "/apps/mailbox",

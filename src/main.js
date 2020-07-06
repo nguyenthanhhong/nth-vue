@@ -18,7 +18,7 @@ Vue.use(icons)
 
 Vue.use(VueGoogleMaps, {
   load: {
-    key: "YOUR_API_TOKEN",
+    key: "AIzaSyBlzFb_sy2ujgiORrNFUuy-SMskJsVyeiE",
     libraries: "places"
   }
 });
