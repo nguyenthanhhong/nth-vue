@@ -197,8 +197,8 @@ export default [
 		Icon: "el-icon-s-operation",
 		child: [
 			{
-				Code: "General Element",
-				Title: "general element",
+				Code: "generalElement",
+				Title: "General Element",
 				Icon: "el-icon-menu",
 				Path: "/form/generalfrm"
 			},
