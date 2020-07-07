@@ -50,36 +50,36 @@ export default [
 			},
 			{
 				Code: "login",
-				Title: "login",
+				Title: "Login",
 				Icon: "el-icon-menu",
 				Path: "/pages/login"
 			},
 			{
 				Code: "register",
-				Title: "register",
+				Title: "Register",
 				Icon: "el-icon-menu",
 				Path: "/pages/register"
 			},
 			{
 				Code: "forgotpassword",
-				Title: "forgotpassword",
+				Title: "Forgot Password",
 				Icon: "el-icon-menu",
 				Path: "/pages/forgotpassword"
 			},
 			{
 				Code: "maps",
-				Title: "maps",
+				Title: "Maps",
 				Icon: "el-icon-menu",
 				child: [
 					{
 						Code: "googlemap",
-						Title: "googlemap",
+						Title: "Googlemap",
 						Icon: "el-icon-menu",
 						Path: "/map/googlemap"
 					},
 					{
 						Code: "kakaomap",
-						Title: "kakaomap",
+						Title: "Kakaomap",
 						Icon: "el-icon-menu",
 						Path: "/map/kakaomap"
 					}
@@ -112,37 +112,37 @@ export default [
 			},
 			{
 				Code: "tooltip",
-				Title: "tooltip & popover",
+				Title: "Tooltip & Popover",
 				Icon: "el-icon-menu",
 				Path: "/ui/tooltip"
 			},
 			{
 				Code: "dialog",
-				Title: "dialog",
+				Title: "Dialog",
 				Icon: "el-icon-menu",
 				Path: "/ui/dialog"
 			},
 			{
 				Code: "tab",
-				Title: "tab",
+				Title: "Tabs",
 				Icon: "el-icon-menu",
 				Path: "/ui/tab"
 			},
 			{
 				Code: "images",
-				Title: "images",
+				Title: "Images",
 				Icon: "el-icon-menu",
 				Path: "/ui/images"
 			},
 			{
 				Code: "colors",
-				Title: "colors picker",
+				Title: "Colors Picker",
 				Icon: "el-icon-menu",
 				Path: "/ui/colors"
 			},
 			{
 				Code: "progressbars",
-				Title: "progressbars",
+				Title: "Progress Bars",
 				Icon: "el-icon-menu",
 				Path: "/ui/progressbars"
 			},
@@ -161,31 +161,31 @@ export default [
 		child: [
 			{
 				Code: "animation",
-				Title: "animation",
+				Title: "Animation",
 				Icon: "el-icon-menu",
 				Path: "/ui/animation"
 			},
 			{
 				Code: "scrollable",
-				Title: "scrollable",
+				Title: "Scrollable",
 				Icon: "el-icon-menu",
 				Path: "/ui/scrollable"
 			},
 			{
 				Code: "rating",
-				Title: "rating",
+				Title: "Rating",
 				Icon: "el-icon-menu",
 				Path: "/ui/rating"
 			},
 			{
 				Code: "alert",
-				Title: "alert",
+				Title: "Alert",
 				Icon: "el-icon-menu",
 				Path: "/ui/alert"
 			},
 			{
 				Code: "treeview",
-				Title: "treeview",
+				Title: "Treeview",
 				Icon: "el-icon-menu",
 				Path: "/ui/treeview"
 			}
@@ -197,20 +197,20 @@ export default [
 		Icon: "el-icon-s-operation",
 		child: [
 			{
-				Code: "general element",
+				Code: "General Element",
 				Title: "general element",
 				Icon: "el-icon-menu",
 				Path: "/form/generalfrm"
 			},
 			{
-				Code: "material",
-				Title: "material element",
+				Code: "Material",
+				Title: "Material element",
 				Icon: "el-icon-menu",
 				Path: "/form/materialfrm"
 			},
 			{
 				Code: "formWizard",
-				Title: "formWizard",
+				Title: "Form Wizard",
 				Icon: "el-icon-menu",
 				Path: "/form/wizardfrm"
 			},
@@ -228,18 +228,18 @@ export default [
 			},
 			{
 				Code: "editors",
-				Title: "editors",
+				Title: "Editors",
 				Icon: "el-icon-menu",
 				child: [
 					{
 						Code: "markdown",
-						Title: "markdown",
+						Title: "Markdown",
 						Icon: "el-icon-menu",
 						Path: "/editors/markdown"
 					},
 					{
 						Code: "codeeditor",
-						Title: "code editor",
+						Title: "Code Editor",
 						Icon: "el-icon-menu",
 						Path: "/editors/codeeditor"
 					}
@@ -304,7 +304,7 @@ export default [
 		child: [
 			{
 				Code: "calendar",
-				Title: "calendar",
+				Title: "Calendar",
 				Icon: "el-icon-menu",
 				Path: "/apps/calendar"
 			},
@@ -322,7 +322,7 @@ export default [
 			},
 			{
 				Code: "forum",
-				Title: "forum",
+				Title: "Forum",
 				Icon: "el-icon-menu",
 				Path: "/apps/forum"
 			}
