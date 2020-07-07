@@ -69,42 +69,42 @@ export default {
             zip: 'CA 90036'
         }, {
             date: '2016-05-02',
-            name: 'Tom',
+            name: 'John',
             state: 'California',
             city: 'Los Angeles',
             address: 'No. 189, Grove St, Los Angeles',
             zip: 'CA 90036'
         }, {
             date: '2016-05-04',
-            name: 'Tom',
+            name: 'Morgan',
             state: 'California',
             city: 'Los Angeles',
             address: 'No. 189, Grove St, Los Angeles',
             zip: 'CA 90036'
         }, {
             date: '2016-05-01',
-            name: 'Tom',
+            name: 'Jessy',
             state: 'California',
             city: 'Los Angeles',
             address: 'No. 189, Grove St, Los Angeles',
             zip: 'CA 90036'
         }, {
             date: '2016-05-08',
-            name: 'Tom',
+            name: 'Henry',
             state: 'California',
             city: 'Los Angeles',
             address: 'No. 189, Grove St, Los Angeles',
             zip: 'CA 90036'
         }, {
             date: '2016-05-06',
-            name: 'Tom',
+            name: 'Jackson',
             state: 'California',
             city: 'Los Angeles',
             address: 'No. 189, Grove St, Los Angeles',
             zip: 'CA 90036'
         }, {
             date: '2016-05-07',
-            name: 'Tom',
+            name: 'Ella',
             state: 'California',
             city: 'Los Angeles',
             address: 'No. 189, Grove St, Los Angeles',

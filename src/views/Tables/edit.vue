@@ -2,7 +2,7 @@
   <div>
     <el-card class="box-card">
       <div slot="header" class="clearfix">
-        <span style="font-weight: 900;">Table with fixed columns and header</span>
+        <span style="font-weight: 900;">Edit table</span>
       </div>
       <el-table
         ref="grd_main"

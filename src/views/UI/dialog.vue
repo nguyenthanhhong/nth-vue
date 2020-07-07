@@ -41,21 +41,40 @@
       </el-card>
     </el-col>
     </el-row>
-    <el-col :span="12">
+    <el-col :span="24">
       <el-card class="box-card">
         <el-button @click="openAnotherDialog">Get data from Dialog</el-button>
         <div>Result</div>
-      </el-card>
-    </el-col>
-    <el-col :span="12">
-      <el-card class="box-card">
-        
-        <el-input  v-model="dialogResult.date"></el-input>
-        <el-input  v-model="dialogResult.name"></el-input>
-        <el-input  v-model="dialogResult.state"></el-input>
-        <el-input  v-model="dialogResult.city"></el-input>
-        <el-input  v-model="dialogResult.address"></el-input>
-        <el-input  v-model="dialogResult.zip"></el-input>
+        <el-col :span="12">
+          <el-input  v-model="dialogResult.date">
+            <template slot="prepend">Date: </template>
+          </el-input>
+        </el-col>
+        <el-col :span="12">
+          <el-input  v-model="dialogResult.name">
+            <template slot="prepend">Name: </template>
+          </el-input>
+        </el-col>
+        <el-col :span="12">
+          <el-input  v-model="dialogResult.state">
+            <template slot="prepend">State: </template>
+          </el-input>
+        </el-col>
+        <el-col :span="12">
+          <el-input  v-model="dialogResult.city">
+            <template slot="prepend">City: </template>
+          </el-input>
+        </el-col>
+        <el-col :span="12">
+          <el-input  v-model="dialogResult.address">
+            <template slot="prepend">Address: </template>
+          </el-input>
+        </el-col>
+        <el-col :span="12">
+          <el-input  v-model="dialogResult.zip">
+            <template slot="prepend">Zip: </template>
+          </el-input>
+        </el-col>
       </el-card>
     </el-col>
   </div>

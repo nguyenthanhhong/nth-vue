@@ -51,25 +51,25 @@ export default [
 			{
 				Code: "login",
 				Title: "Login",
-				Icon: "el-icon-menu",
+				//Icon: "el-icon-menu",
 				Path: "/pages/login"
 			},
 			{
 				Code: "register",
 				Title: "Register",
-				Icon: "el-icon-menu",
+				//Icon: "el-icon-menu",
 				Path: "/pages/register"
 			},
 			{
 				Code: "forgotpassword",
 				Title: "Forgot Password",
-				Icon: "el-icon-menu",
+				//Icon: "el-icon-menu",
 				Path: "/pages/forgotpassword"
 			},
 			{
 				Code: "maps",
 				Title: "Maps",
-				Icon: "el-icon-menu",
+				//Icon: "el-icon-menu",
 				child: [
 					{
 						Code: "googlemap",
@@ -128,12 +128,12 @@ export default [
 				Icon: "el-icon-menu",
 				Path: "/ui/tab"
 			},
-			{
-				Code: "images",
-				Title: "Images",
-				Icon: "el-icon-menu",
-				Path: "/ui/images"
-			},
+			// {
+			// 	Code: "images",
+			// 	Title: "Images",
+			// 	Icon: "el-icon-menu",
+			// 	Path: "/ui/images"
+			// },
 			{
 				Code: "colors",
 				Title: "Colors Picker",
@@ -154,43 +154,43 @@ export default [
 			}
 		]
 	},
-	{
-		Code: "advui",
-		Title: "Advanced UI",
-		Icon: "el-icon-s-ticket",
-		child: [
-			{
-				Code: "animation",
-				Title: "Animation",
-				Icon: "el-icon-menu",
-				Path: "/ui/animation"
-			},
-			{
-				Code: "scrollable",
-				Title: "Scrollable",
-				Icon: "el-icon-menu",
-				Path: "/ui/scrollable"
-			},
-			{
-				Code: "rating",
-				Title: "Rating",
-				Icon: "el-icon-menu",
-				Path: "/ui/rating"
-			},
-			{
-				Code: "alert",
-				Title: "Alert",
-				Icon: "el-icon-menu",
-				Path: "/ui/alert"
-			},
-			{
-				Code: "treeview",
-				Title: "Treeview",
-				Icon: "el-icon-menu",
-				Path: "/ui/treeview"
-			}
-		]
-	},
+	// {
+	// 	Code: "advui",
+	// 	Title: "Advanced UI",
+	// 	Icon: "el-icon-s-ticket",
+	// 	child: [
+	// 		{
+	// 			Code: "animation",
+	// 			Title: "Animation",
+	// 			Icon: "el-icon-menu",
+	// 			Path: "/ui/animation"
+	// 		},
+	// 		{
+	// 			Code: "scrollable",
+	// 			Title: "Scrollable",
+	// 			Icon: "el-icon-menu",
+	// 			Path: "/ui/scrollable"
+	// 		},
+	// 		{
+	// 			Code: "rating",
+	// 			Title: "Rating",
+	// 			Icon: "el-icon-menu",
+	// 			Path: "/ui/rating"
+	// 		},
+	// 		{
+	// 			Code: "alert",
+	// 			Title: "Alert",
+	// 			Icon: "el-icon-menu",
+	// 			Path: "/ui/alert"
+	// 		},
+	// 		{
+	// 			Code: "treeview",
+	// 			Title: "Treeview",
+	// 			Icon: "el-icon-menu",
+	// 			Path: "/ui/treeview"
+	// 		}
+	// 	]
+	// },
 	{
 		Code: "form",
 		Title: "Forms",
@@ -202,12 +202,12 @@ export default [
 				Icon: "el-icon-menu",
 				Path: "/form/generalfrm"
 			},
-			{
-				Code: "Material",
-				Title: "Material element",
-				Icon: "el-icon-menu",
-				Path: "/form/materialfrm"
-			},
+			// {
+			// 	Code: "Material",
+			// 	Title: "Material element",
+			// 	Icon: "el-icon-menu",
+			// 	Path: "/form/materialfrm"
+			// },
 			{
 				Code: "formWizard",
 				Title: "Form Wizard",
@@ -220,27 +220,27 @@ export default [
 				Icon: "el-icon-menu",
 				Path: "/form/validfrm"
 			},
-			{
-				Code: "File Uploads",
-				Title: "File Uploads",
-				Icon: "el-icon-menu",
-				Path: "/form/uploadfrm"
-			},
+			// {
+			// 	Code: "File Uploads",
+			// 	Title: "File Uploads",
+			// 	Icon: "el-icon-menu",
+			// 	Path: "/form/uploadfrm"
+			// },
 			{
 				Code: "editors",
 				Title: "Editors",
-				Icon: "el-icon-menu",
+				//Icon: "el-icon-menu",
 				child: [
 					{
 						Code: "markdown",
 						Title: "Markdown",
-						Icon: "el-icon-menu",
+						//Icon: "el-icon-menu",
 						Path: "/editors/markdown"
 					},
 					{
 						Code: "codeeditor",
 						Title: "Code Editor",
-						Icon: "el-icon-menu",
+						//Icon: "el-icon-menu",
 						Path: "/editors/codeeditor"
 					}
 				]
@@ -255,19 +255,19 @@ export default [
 			{
 				Code: "basictables",
 				Title: "Basic Tables",
-				Icon: "el-icon-menu",
+				//Icon: "el-icon-menu",
 				Path: "/table/basictables"
 			},
 			{
 				Code: "edittables",
 				Title: "Edit Tables",
-				Icon: "el-icon-menu",
+				//Icon: "el-icon-menu",
 				Path: "/table/edittables"
 			},
 			{
 				Code: "treetable",
 				Title: "Tree Tables",
-				Icon: "el-icon-menu",
+				//Icon: "el-icon-menu",
 				Path: "/table/treetable"
 			}
 		]
@@ -280,19 +280,19 @@ export default [
 			{
 				Code: "barchart",
 				Title: "Bar Chart",
-				Icon: "el-icon-menu",
+				Icon: "el-icon-picture",
 				Path: "/chart/barchart"
 			},
 			{
 				Code: "linechart",
 				Title: "Line Chart",
-				Icon: "el-icon-menu",
+				Icon: "el-icon-picture-outline-round",
 				Path: "/chart/linechart"
 			},
 			{
 				Code: "piechart",
 				Title: "Pie Chart",
-				Icon: "el-icon-menu",
+				Icon: "el-icon-picture-outline",
 				Path: "/chart/piechart"
 			}
 		]
@@ -308,24 +308,24 @@ export default [
 				Icon: "el-icon-menu",
 				Path: "/apps/calendar"
 			},
-			{
-				Code: "mailbox",
-				Title: "Mail Box",
-				Icon: "el-icon-menu",
-				Path: "/apps/mailbox"
-			},
-			{
-				Code: "media",
-				Title: "Media",
-				Icon: "el-icon-menu",
-				Path: "/apps/media"
-			},
-			{
-				Code: "forum",
-				Title: "Forum",
-				Icon: "el-icon-menu",
-				Path: "/apps/forum"
-			}
+			// {
+			// 	Code: "mailbox",
+			// 	Title: "Mail Box",
+			// 	Icon: "el-icon-menu",
+			// 	Path: "/apps/mailbox"
+			// },
+			// {
+			// 	Code: "media",
+			// 	Title: "Media",
+			// 	Icon: "el-icon-menu",
+			// 	Path: "/apps/media"
+			// },
+			// {
+			// 	Code: "forum",
+			// 	Title: "Forum",
+			// 	Icon: "el-icon-menu",
+			// 	Path: "/apps/forum"
+			// }
 		]
 	}
 ]

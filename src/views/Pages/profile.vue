@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-row :gutter="20">
-      <el-col :span="6" :xs="24">
+      <el-col :span="8" :xs="24">
         <el-card style="margin-bottom:20px;">
           <div slot="header" class="clearfix">
             <span>About me</span>
@@ -51,7 +51,7 @@
         </el-card>
       </el-col>
 
-      <el-col :span="18" :xs="24">
+      <el-col :span="16" :xs="24">
         <el-card>
           <el-tabs v-model="activeTab">
             <el-tab-pane label="Skill" name="activity">
@@ -125,7 +125,7 @@
                 </el-tooltip>
                 <ul class="list-inline">
                   <li>
-                    <el-tooltip content="Languages" placement="top">
+                    <el-tooltip content="Back-end Technologies" placement="top">
                       <span class="link-black text-sm">
                         <i class="el-icon-setting" />
                         {{item.Languages}}
@@ -242,7 +242,8 @@ export default {
       ],
       skill_ide: [
         { title: "Eclipse, IntelliJ", percentage: 100 },
-        { title: "Git, SVN", percentage: 100 }
+        { title: "Git, SVN", percentage: 100 },
+        { title: "Maven, Gradle", percentage: 100 }
       ],
       skill_soft: [
         { title: "Java Core", percentage: 100 },
@@ -253,10 +254,28 @@ export default {
       ],
       projects: [
         {
+          Name: "Gms SCM",
+          Client: "Korea",
+          Time: "7/2019 - 12/2019",
+          Description: "",
+          Responsibilities: "Senior Developer",
+          Languages: "Java 8, Spring boot, Mybatis, MS SQL Server",
+          Technologies: "HTML, CSS, JavaScript, Vue"
+        },
+        {
+          Name: "Homepick",
+          Client: "Korea",
+          Time: "7/2019 - 12/2019",
+          Description: "Convert Homepick homepage and Homepick api from PHP to Java + Vuejs",
+          Responsibilities: "Senior Developer",
+          Languages: "Java 8, Spring boot, Mybatis, MySQL",
+          Technologies: "HTML, CSS, JavaScript, Vue"
+        },
+        {
           Name: "IMONE",
           //Client: "-",
           Time: "7/2019 - 12/2019",
-          Description: "Setup project, my commission to develop basic function and common function",
+          Description: "Setup project, develop basic function and common function",
           Responsibilities: "Senior Developer",
           Languages: "Java 8, Spring boot, Mybatis, MySQL",
           Technologies: "HTML, CSS, JavaScript, Bootstrap 3, Jquery 2"
@@ -338,7 +357,8 @@ data for closing books`,
           Name: "NthVueJs",
           Link: "https://github.com/nguyenthanhhong/nth-vue",
           Description: "production-ready front-end solution for admin interfaces. It is based on vue and uses the UI Toolkit element-ui.",
-          Technologies: "HTML, CSS, JavaScript, Bootstrap 4, Jquery 3"
+          Technologies: "HTML, CSS, JavaScript, Vue",
+          Review: 'https://nguyenthanhhong.github.io/index'
         },
         {
           Name: "Taovetroi",
