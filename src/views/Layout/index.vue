@@ -1,14 +1,14 @@
 <template>
-  <el-container :class="{'hideSidebar':isCollapse}" style="height: 100vh;">
+  <el-container :class="{'hideSidebar':isCollapse}" style="max-height: 100vh;">
     <LeftPanel class="sidebar-container"/>      
     <el-container class="main-container">
       <HeaderPanel />
-      <el-main>
+      <el-main style="height: calc(100vh - 110px)">
         <router-view />
       </el-main>
       <el-footer><FooterPanel /></el-footer>
     </el-container>
-    <RightPanel></RightPanel>
+    <!-- <RightPanel></RightPanel> -->
   </el-container>
 </template>
 

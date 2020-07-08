@@ -221,22 +221,22 @@ Vue.use(VueRouter)
       },
       {
         path: "/apps/calendar",
-        name: 'About',
+        name: 'calendar',
         component: () => import('@/views/Apps/calendar.vue')
       },
       {
         path: "/apps/mailbox",
-        name: 'About',
+        name: 'mailbox',
         component: () => import('@/views/About.vue')
       },
       {
         path: "/apps/media",
-        name: 'About',
+        name: 'media',
         component: () => import('@/views/About.vue')
       },
       {
         path: "/apps/forum",
-        name: 'About',
+        name: 'forum',
         component: () => import('@/views/About.vue')
       },
     ]
