@@ -16,7 +16,7 @@ module.exports = {
     runtimeCompiler: true,
     //publicPath: process.env.NODE_ENV === 'production' ? '/gms_homepick/' : '/',
     publicPath: '/vue-element/',
-    outputDir: '../vue-element',
+    //outputDir: '../vue-element',
     configureWebpack: {
         //Necessary to run npm link https://webpack.js.org/configuration/resolve/#resolve-symlinks
         resolve: {
