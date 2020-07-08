@@ -257,7 +257,10 @@ export default {
           Name: "Gms SCM",
           Client: "Korea",
           Time: "7/2019 - 12/2019",
-          Description: "",
+          Description: `This is a web application for Supply Chain Management system, include 3 module: 
+- Admin management: setup enviroment variable, authority, basic information of all system
+- Warehouse Management System: manage in daily planning, organizing, staffing, directing, and controlling the utilization of available resources, to move and store materials into, within, and out of a warehouse, while supporting staff in the performance of material movement and storage in and around a warehouse
+- Global Transportation Optimization: Optimizing international freight movements across multiple lanes and modes and Effectively interfacing between modes of transportation at ports, rail yards and trucking terminals`,
           Responsibilities: "Senior Developer",
           Languages: "Java 8, Spring boot, Mybatis, MS SQL Server",
           Technologies: "HTML, CSS, JavaScript, Vue"
@@ -358,7 +361,7 @@ data for closing books`,
           Link: "https://github.com/nguyenthanhhong/nth-vue",
           Description: "production-ready front-end solution for admin interfaces. It is based on vue and uses the UI Toolkit element-ui.",
           Technologies: "HTML, CSS, JavaScript, Vue",
-          Review: 'https://nguyenthanhhong.github.io/index'
+          Review: 'https://nguyenthanhhong.github.io/vue-element/index'
         },
         {
           Name: "Taovetroi",
