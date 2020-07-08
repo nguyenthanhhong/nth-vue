@@ -1,7 +1,7 @@
 module.exports = {
     devServer: {
         proxy: {
-            '/vue-element-admin': {
+            '/vue-element': {
                 target: 'http://localhost:8090',
                 // changeOrigin:true,
                 /*
